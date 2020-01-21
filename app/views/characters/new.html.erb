@@ -1,0 +1,48 @@
+<h1>Add a new character!</h1>
+
+<%= form_for :character do |f| %>
+    <hr>
+
+    <p>
+        <%= f.label :character_name, "Character Name"%><br>
+        <%= f.text_field :character_name%>
+    </p> 
+
+    <p>
+        <%= f.label :class%> <br>
+        <%= f.select :class, ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Palidin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']%> <br>
+    </p>
+
+    <p>
+        <%= f.label :background %> <br>
+        <%= f.select :background, ['Acolyte', 'Barbarian', 'Charlatan', 'City Watch', 'Clan crafter', 'Cloistered Scholar', 'Courteir', 'Criminal', 'Entertainer', 'Faction Agent', 'Far Traveler', 'Fisher', 'Folk Hero', 'Guild Artisan', 'Guild Merchant', 'Haunted One', 'Hermit', 'House Agent', 'Inheritor', 'Knight', 'Marine', 'Mercinary', 'Noble', 'Outlander', 'Sage', 'Sailor', 'Shipwright', 'Smuggler', 'Soldier', 'Urban Bounty Hunter', 'Urchin'] %> <br>
+    </p>
+
+    <p>
+        <%= f.label :race%> <br>
+        <%= f.text_field :race %> <br>
+    </p>
+    
+
+    <p>
+        <%= f.label :alignment%> <br>
+        <%= f.select :alignment, ['Lawful Good', 'Neutral Good', 'Chaotic Good', 'Lawful Neutral', 'True Neutral', 'Chaotic Neutral', 'Lawful Evil', 'Neutral Evil', 'Chaotic Evil']%> <br>
+    </p>
+    
+    <hr>
+
+    <p>
+    
+        <%= f.label :strength %> <br>
+        <%= f.select :strength , ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20'] %> <br>
+        <%= f.label :strength_modifyer, 'Strength Modifyer' %> <br>
+        <%= f.select :strength_modifyer, ['-5', '-4', '-3', '-2', '-1', '+0', '+1', '+2', '+3', '+4', '+5', '+6', '+7', '+8', '+9', '+10']%>
+    </p>
+
+<p>
+    <%= f.submit %>
+</p>
+
+
+
+<% end %>
