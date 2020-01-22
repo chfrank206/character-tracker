@@ -1,6 +1,6 @@
 <h1>Add a new character!</h1>
 
-<%= form_for :character do |f| %>
+<%= form_for :character, url: characters_path do |f| %>
     <hr>
 
     <p>
@@ -9,8 +9,8 @@
     </p> 
 
     <p>
-        <%= f.label :class%> <br>
-        <%= f.select :class, ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Palidin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']%> <br>
+        <%= f.label :character_class%> <br>
+        <%= f.select :character_class, ['Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk', 'Palidin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard']%> <br>
     </p>
 
     <p>

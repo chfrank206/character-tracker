@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  character_name: MyString
+  character_class: MyString
+  background: MyString
+  race: MyString
+  alignment: MyString
+  strength: MyString
+  strength_modifyer: MyString
+
+two:
+  character_name: MyString
+  character_class: MyString
+  background: MyString
+  race: MyString
+  alignment: MyString
+  strength: MyString
+  strength_modifyer: MyString
